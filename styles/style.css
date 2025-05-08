@@ -192,7 +192,7 @@ img {
 /* Hero Section */
 .hero {
     height: 80vh;
-    background-image: linear-gradient(rgba(0,0,0.5,0.5), rgba(0,0,0.5,0.5)), url('/assets/images/hero-bg.jpg');
+    background-image: linear-gradient(rgba(0,0,0.5,0.5), rgba(0,0,0,0.9)), url('/assets/images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -367,7 +367,7 @@ img {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0px;
 }
 
 .lesson-info {
@@ -408,14 +408,14 @@ img {
     color: #f7ba20;
 }
 
-.lesson-image {
+.lesson-video {
     flex: 1;
     min-width: 300px;
     padding: 20px;
 }
 
-.lesson-image img {
-    width: 100%;
+.lesson-video video {
+    width: 125%;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
