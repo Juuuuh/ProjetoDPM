@@ -1,12 +1,244 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto DPM</title>
+    <title>JC Music - Your Music Store</title>
+
+    <!-- Styles -->
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>Projeto DPM</h1>
-    <p>Em construção . . . </p>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="JC Music Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#instruments">Instrumentos</a></li>
+                <li><a href="#accessories">Accessórios</a></li>
+                <li><a href="#lessons">Aulas</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#contact">Contactos</a></li>
+            </ul>
+            <div class="cart-icon">
+                <a href="#cart"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Secção hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Encontra o teu som.</h1>
+                <p>Instrumentos de qualidade, acessórios e aulas.</p>
+                <a href="#shop-now" class="btn">Bora Lá!</a>
+            </div>
+        </section>
+
+        <!-- Destaques -->
+        <section class="featured-products" id="shop-now">
+            <div class="section-title">
+                <h2>Produtos em destaque</h2>
+                <p>Os nossos instrumentos e acessórios mais populares</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/guitarra-eletrica-ibanez.jpg" alt="Electric Guitar">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ibanez QX527PB-ABS  </h3>
+                        <p class="price">899.99 €</p>
+                        <p class="description">
+                            A Ibanez QX527PB-ABS é uma guitarra elétrica headless (sem pala) de 7 cordas da série Ibanez Quest, concebida para guitarristas modernos e técnicos que procuram conforto, versatilidade e um visual arrojado.
+                        </p>
+
+                        
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/teclado-roland.jpg" alt="Digital Piano">
+                    </div>
+                    <div class="product-info">
+                        <h3>Roland GO:KEYS 5 WH</h3>
+                        <p class="price">415 €</p>
+                        <p class="description">88-key weighted keyboard with authentic piano sound</p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/drums1.jpg" alt="Drum Set">
+                    </div>
+                    <div class="product-info">
+                        <h3>Drum Set</h3>
+                        <p class="price">899.99 €</p>
+                        <p class="description">Complete 5-piece drum set for beginners and professionals</p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/violin1.jpg" alt="Violin">
+                    </div>
+                    <div class="product-info">
+                        <h3>Violin</h3>
+                        <p class="price">349.99 €</p>
+                        <p class="description">Handcrafted violin with case and bow included</p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories" id="instruments">
+            <div class="section-title">
+                <h2>Browse by Category</h2>
+                <p>Find exactly what you're looking for</p>
+            </div>
+            
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="assets/images/string-instruments.jpg" alt="String Instruments">
+                    <h3>String Instruments</h3>
+                    <a href="#string-instruments" class="btn-small">Browse</a>
+                </div>
+                
+                <div class="category-card">
+                    <img src="assets/images/percussion.jpg" alt="Percussion">
+                    <h3>Percussion</h3>
+                    <a href="#percussion" class="btn-small">Browse</a>
+                </div>
+                
+                <div class="category-card">
+                    <img src="assets/images/keyboards.jpg" alt="Keyboards">
+                    <h3>Keyboards</h3>
+                    <a href="#keyboards" class="btn-small">Browse</a>
+                </div>
+                
+                <div class="category-card">
+                    <img src="assets/images/wind-instruments.jpg" alt="Wind Instruments">
+                    <h3>Wind Instruments</h3>
+                    <a href="#wind-instruments" class="btn-small">Browse</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Lessons Section -->
+        <section class="music-lessons" id="lessons">
+            <div class="section-title">
+                <h2>Music Lessons</h2>
+                <p>Learn from professional musicians</p>
+            </div>
+            
+            <div class="lessons-container">
+                <div class="lesson-info">
+                    <h3>In-Person & Online Lessons</h3>
+                    <p>Our experienced instructors offer lessons for all ages and skill levels. Whether you're a beginner or looking to refine your skills, we have the perfect program for you.</p>
+                    <ul class="lesson-types">
+                        <li>Guitar Lessons</li>
+                        <li>Piano Lessons</li>
+                        <li>Drum Lessons</li>
+                        <li>Violin Lessons</li>
+                        <li>Voice Lessons</li>
+                    </ul>
+                    <a href="#book-lesson" class="btn">Book a Lesson</a>
+                </div>
+                <div class="lesson-image">
+                    <img src="assets/images/music-lesson.jpg" alt="Music Lesson">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="section-title">
+                <h2>What Our Customers Say</h2>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"JC Music has the best selection of guitars in town. The staff is incredibly knowledgeable and helped me find the perfect instrument for my needs."</p>
+                    <div class="testimonial-author">
+                        <p>- Michael S., Guitarist</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p>"I've been taking piano lessons through JC Music for the past year and my skills have improved tremendously. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <p>- Sarah L., Piano Student</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p>"The range of accessories and equipment at JC Music is impressive. I always find what I need for my studio setup."</p>
+                    <div class="testimonial-author">
+                        <p>- David R., Music Producer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>JC Music</h3>
+                <p>Your one-stop shop for all things music. Quality instruments, accessories, and professional lessons.</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#instruments">Instruments</a></li>
+                    <li><a href="#accessories">Accessories</a></li>
+                    <li><a href="#lessons">Lessons</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>123 Music Street<br>
+                   Melody City, MC 12345</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@jcmusic.com</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit" class="btn-small">Subscribe</button>
+                </form>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 JC Music. All Rights Reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
