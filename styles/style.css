@@ -358,6 +358,11 @@ img {
 }
 
 /* Music Lessons Section */
+
+.music-lessons{
+    margin-top: 5%;
+}
+
 .pricing-container {
     background-color: #fff;
     border-radius: 8px;
