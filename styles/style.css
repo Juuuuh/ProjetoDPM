@@ -233,9 +233,10 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
+    
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 
 .product-card {
@@ -356,28 +357,31 @@ img {
 }
 
 /* Music Lessons Section */
-.music-lessons {
-    padding: 80px 0;
+.pricing-container {
     background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.lessons-container {
+.lesson-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0px;
+    margin-bottom: 40px;
 }
 
 .lesson-info {
     flex: 1;
     min-width: 300px;
-    padding: 20px;
+    padding-right: 30px;
 }
 
 .lesson-info h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 800;
     margin-bottom: 20px;
     color: #333;
@@ -386,38 +390,114 @@ img {
 }
 
 .lesson-info p {
-    margin-bottom: 20px;
     color: #666;
-}
-
-.lesson-types {
-    margin-bottom: 30px;
-}
-
-.lesson-types li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-    font-weight: 500;
-}
-
-.lesson-types li::before {
-    content: '♪';
-    position: absolute;
-    left: 0;
-    color: #f7ba20;
+    line-height: 1.6;
 }
 
 .lesson-video {
     flex: 1;
     min-width: 300px;
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .lesson-video video {
-    width: 125%;
+    width: 100%;
+    max-width: 500px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.pricing-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.pricing-item:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-item.full-width {
+    grid-column: 1 / -1;
+}
+
+.pricing-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.lesson-name {
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #f7ba20;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #666;
+    font-size: 0,9rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.pricing-item .btn-small {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.pricing-note {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .lesson-container {
+        flex-direction: column;
+    }
+    
+    .lesson-info {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .lesson-name {
+        font-size: 1.2rem;
+    }
+    
+    .price {
+        font-size: 1.8rem;
+    }
 }
 
 /* Testimonials */
