@@ -447,12 +447,20 @@ img {
 
 .testimonial p {
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 
 .testimonial-author {
     font-weight: 600;
     color: #f7ba20;
+    margin-bottom: -15px;
+
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 /* Footer */
