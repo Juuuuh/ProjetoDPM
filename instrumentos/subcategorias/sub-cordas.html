@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guitarras acústicas</title>
+    <title>Instrumentos de Cordas</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="../../styles/subcategorias.css" rel="stylesheet">
 </head>
 <body>
-    
+
     <!-- Header Section -->
+    <div id="header-placeholder"></div>
+
     <section class="header-section">
         <div class="header-content">
             <div class="header-title">
-                <h1>Guitarras acústicas</h1>
+                <h1>Instrumentos de Cordas</h1>
             </div>
         </div>
     </section>
@@ -23,103 +25,61 @@
         <div class="categories-container">
             <div class="categories-grid">
                 <!-- Guitarras Dreadnought -->
-                <div class="category-item" onclick="navigateToCategory('dreadnought')">
+                <div class="category-item">
                     <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop" alt="Guitarra Dreadnought">
+                        <img src="/assets/images/instrumentos/subcategorias/cordas/dreadnought.png" alt="Guitarra Dreadnought">
                     </div>
                     <div class="category-name">Guitarras Dreadnought</div>
                 </div>
 
                 <!-- Guitarras Jumbo -->
-                <div class="category-item" onclick="navigateToCategory('jumbo')">
+                <div class="category-item">
                     <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=300&h=300&fit=crop" alt="Guitarra Jumbo">
+                        <img src="/assets/images/instrumentos/subcategorias/cordas/eletrica.png" alt="Guitarra Jumbo">
                     </div>
-                    <div class="category-name">Guitarras Jumbo</div>
+                    <div class="category-name">Guitarras Elétricas</div>
                 </div>
 
                 <!-- Guitarras Folk -->
-                <div class="category-item" onclick="navigateToCategory('folk')">
+                <div class="category-item">
                     <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?w=300&h=300&fit=crop" alt="Guitarra Folk">
+                        <img src="/assets/images/instrumentos/subcategorias/cordas/classicos.png" alt="Guitarra Folk">
                     </div>
-                    <div class="category-name">Guitarras Folk</div>
-                </div>
-
-                <!-- 0/00/000 Tamanho do corpo -->
-                <div class="category-item" onclick="navigateToCategory('small-body')">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=300&h=300&fit=crop" alt="Guitarra Pequena">
-                    </div>
-                    <div class="category-name">0/00/000 Tamanho do corpo</div>
+                    <div class="category-name">Clássicos</div>
                 </div>
 
                 <!-- Guitarras Roundback -->
-                <div class="category-item" onclick="navigateToCategory('roundback')">
+                <div class="category-item">
                     <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=300&fit=crop" alt="Guitarra Roundback">
+                        <img src="/assets/images/instrumentos/subcategorias/cordas/roundback.png" alt="Guitarra Roundback">
                     </div>
                     <div class="category-name">Guitarras Roundback</div>
                 </div>
 
                 <!-- Guitarras Western de 12 cordas -->
-                <div class="category-item" onclick="navigateToCategory('12-string')">
+                <div class="category-item">
                     <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1583971825809-2554bcd8e9b9?w=300&h=300&fit=crop" alt="Guitarra 12 cordas">
+                        <img src="/assets/images/instrumentos/subcategorias/cordas/12cordas.png" alt="Guitarra 12 cordas">
                     </div>
                     <div class="category-name">Guitarras Western de 12 cordas</div>
-                </div>
-
-                <!-- Guitarras acústicas para canhotos -->
-                <div class="category-item" onclick="navigateToCategory('left-handed')">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop&flip=h" alt="Guitarra para canhotos">
-                    </div>
-                    <div class="category-name">Guitarras acústicas para canhotos</div>
-                </div>
-
-                <!-- Guitarras Western Signature -->
-                <div class="category-item special" onclick="navigateToCategory('signature')">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=300&h=300&fit=crop" alt="Guitarra Signature">
-                    </div>
-                    <div class="category-name">Guitarras Western Signature</div>
-                </div>
-
-                <!-- Guitarras acústicas Premium -->
-                <div class="category-item" onclick="navigateToCategory('premium')">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?w=300&h=300&fit=crop" alt="Guitarra Premium">
-                    </div>
-                    <div class="category-name">Guitarras acústicas Premium</div>
-                </div>
-
-                <!-- Guitarras acústicas barítono -->
-                <div class="category-item" onclick="navigateToCategory('baritone')">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=300&h=300&fit=crop" alt="Guitarra Barítono">
-                    </div>
-                    <div class="category-name">Guitarras acústicas barítono</div>
-                </div>
-
-                <!-- Outras guitarras acústicas -->
-                <div class="category-item" onclick="navigateToCategory('others')">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=300&fit=crop" alt="Outras guitarras">
-                    </div>
-                    <div class="category-name">Outras guitarras acústicas</div>
-                </div>
-
-                <!-- Conjuntos de guitarra western -->
-                <div class="category-item set" onclick="navigateToCategory('guitar-sets')">
-                    <div class="set-badge">SET</div>
-                    <div class="category-image guitar-set-image">
-                        <img src="https://images.unsplash.com/photo-1583971825809-2554bcd8e9b9?w=300&h=300&fit=crop" alt="Conjunto de guitarra">
-                    </div>
-                    <div class="category-name">Conjuntos de guitarra western</div>
                 </div>
             </div>
         </div>
     </section>
 </body>
 </html>
+<script>
+    // Function to load header
+    async function loadHeader() {
+        try {
+            const response = await fetch('../../elements/header/header.html');
+            const headerHTML = await response.text();
+            document.getElementById('header-placeholder').innerHTML = headerHTML;
+        } catch (error) {
+            console.error('Error loading header:', error);
+        }
+    }
+
+    // Load header when page loads
+    document.addEventListener('DOMContentLoaded', loadHeader);
+</script>
