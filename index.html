@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +10,11 @@
     <link href="styles/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="JC Music Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#instruments">Instrumentos</a></li>
-                <li><a href="#accessories">Accessórios</a></li>
-                <li><a href="#lessons">Aulas</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
-                <li><a href="#contact">Contactos</a></li>
-            </ul>
-            <div class="cart-icon">
-                <a href="#cart"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
-            </div>
-        </nav>
-    </header>
+
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
 
     <main>
         <!-- Secção hero -->
@@ -45,43 +32,51 @@
                 <h2>Produtos em destaque</h2>
                 <p>Os nossos instrumentos e acessórios mais populares</p>
             </div>
-            
+
             <div class="products-grid">
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="assets/images/guitarra-eletrica-ibanez.jpg" alt="Electric Guitar">
+                        <img src="assets/images/instrumentos/destaques/guitarra-eletrica-ibanez.jpg" alt="Electric Guitar">
                     </div>
                     <div class="product-info">
-                        <h3>Ibanez QX527PB-ABS  </h3>
+                        <h3>Ibanez QX527PB-ABS </h3>
                         <p class="price">899.99 €</p>
                         <p class="description">
-                            A Ibanez QX527PB-ABS é uma guitarra elétrica headless (sem pala) de 7 cordas da série Ibanez Quest, concebida para guitarristas modernos e técnicos que procuram conforto, versatilidade e um visual arrojado.
+                            A Ibanez QX527PB-ABS é uma guitarra elétrica headless (sem pala) de 7 cordas da série Ibanez
+                            Quest, concebida para guitarristas modernos e técnicos que procuram conforto, versatilidade
+                            e um visual arrojado.
                         </p>
-                        
+
                         <button class="btn add-to-cart">Adicionar ao Carrinho</button>
                     </div>
                 </div>
 
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="assets/images/teclado-roland.jpg" alt="Digital Piano">
+                        <img src="assets/images/instrumentos/destaques/teclado-roland.jpg" alt="Digital Piano">
                     </div>
                     <div class="product-info">
                         <h3>Roland GO:KEYS 5 WH</h3>
                         <p class="price">415 €</p>
-                        <p class="description">O Roland GO:KEYS 5 WH é um versátil teclado portátil de 61 teclas concebido para músicos de todos os níveis. Com o motor de som ZEN-Core da Roland, oferece mais de 1.150 tons e 74 kits de bateria, proporcionando uma vasta gama de sons adequados a vários estilos musicais.</p>
+                        <p class="description">O Roland GO:KEYS 5 WH é um versátil teclado portátil de 61 teclas
+                            concebido para músicos de todos os níveis. Com o motor de som ZEN-Core da Roland, oferece
+                            mais de 1.150 tons e 74 kits de bateria, proporcionando uma vasta gama de sons adequados a
+                            vários estilos musicais.</p>
                         <button class="btn add-to-cart">Adicionar ao Carrinho</button>
                     </div>
                 </div>
 
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="assets/images/drumset.jpg" alt="Drum Set">
+                        <img src="assets/images/instrumentos/destaques/drumset.jpg" alt="Drum Set">
                     </div>
                     <div class="product-info">
                         <h3>Ludwig Accent Drive 5pc Black</h3>
                         <p class="price">458 €</p>
-                        <p class="description">Ludwig Accent Drive 5pc Black é um conjunto completo de bateria acústica ideal para iniciantes e bateristas intermediários que procuram um kit acessível, confiável e pronto para tocar. Com um acabamento elegante em Black Sparkle, oferece uma aparência profissional e som equilibrado.</p>
+                        <p class="description">Ludwig Accent Drive 5pc Black é um conjunto completo de bateria acústica
+                            ideal para iniciantes e bateristas intermediários que procuram um kit acessível, confiável e
+                            pronto para tocar. Com um acabamento elegante em Black Sparkle, oferece uma aparência
+                            profissional e som equilibrado.</p>
                         <button class="btn add-to-cart">Adicionar ao Carrinho</button>
                     </div>
                 </div>
@@ -106,30 +101,30 @@
                 <h2>As nossas categorias</h2>
                 <p>Não sabes por onde começar? Dá uma espreitadela nas nossas categorias!</p>
             </div>
-            
+
             <div class="category-grid">
                 <div class="category-card">
-                    <img src="assets/images/cat-inst-cordas.png" alt="Instrumentos de corda">
+                    <img src="assets/images/instrumentos/subcategorias/cordas/cat-cordas.png" alt="Instrumentos de corda">
                     <h3>Intrumentos de corda</h3>
-                    <a href="#string-instruments" class="btn-small">Ver</a>
+                    <a href="instrumentos/subcategorias/sub-cordas.html" class="btn-small">Ver</a>
                 </div>
-                
+
                 <div class="category-card">
-                    <img src="assets/images/cat-inst-percussao.png" alt="Instrumentos de percussão">
+                    <img src="assets/images/instrumentos/subcategorias/percussao/cat-inst-percussao.png" alt="Instrumentos de percussão">
                     <h3>Instrumentos de Percussão</h3>
-                    <a href="#percussion" class="btn-small">Ver</a>
+                    <a href="instrumentos/subcategorias/sub-percussao.html" class="btn-small">Ver</a>
                 </div>
-                
+
                 <div class="category-card">
-                    <img src="assets/images/cat-teclado.png" alt="Teclados">
-                    <h3>Teclados</h3>
-                    <a href="#keyboards" class="btn-small">Ver</a>
+                    <img src="assets/images/instrumentos/subcategorias/sopros/cat-inst-sopro.png" alt="Teclados">
+                    <h3>Instrumentos de Teclas</h3>
+                    <a href="instrumentos/subcategorias/sub-sopros.html" class="btn-small">Ver</a>
                 </div>
-                
+
                 <div class="category-card">
-                    <img src="assets/images/cat-inst-sopro.png" alt="Instrumentos de sopro">
+                    <img src="assets/images/instrumentos/subcategorias/teclas/cat-teclado.png" alt="Instrumentos de sopro">
                     <h3>Instrumentos de sopro</h3>
-                    <a href="#wind-instruments" class="btn-small">Ver</a>
+                    <a href="instrumentos/subcategorias/sub-teclados.html" class="btn-small">Ver</a>
                 </div>
             </div>
         </section>
@@ -139,13 +134,16 @@
             <div class="pricing-container">
                 <div class="section-title">
                     <h2>Preçário de Aulas</h2>
-                    <p>Oferecemos várias opções de preços para atender às suas necessidades. Todos os valores incluem materiais didáticos.</p>
+                    <p>Oferecemos várias opções de preços para atender às suas necessidades. Todos os valores incluem
+                        materiais didáticos.</p>
                 </div>
-                
+
                 <div class="lesson-container">
                     <div class="lesson-info">
                         <h3>In-Person & Online Lessons</h3>
-                        <p>Os nossos instrutores experientes oferecem aulas para todas as idades e níveis de competência. Quer seja um principiante ou esteja à procura de aperfeiçoar as suas capacidades, temos o programa perfeito para si.</p>
+                        <p>Os nossos instrutores experientes oferecem aulas para todas as idades e níveis de
+                            competência. Quer seja um principiante ou esteja à procura de aperfeiçoar as suas
+                            capacidades, temos o programa perfeito para si.</p>
                     </div>
                     <div class="lesson-video">
                         <video autoplay loop controls>
@@ -154,26 +152,28 @@
                         </video>
                     </div>
                 </div>
-                
+
                 <div class="pricing-grid">
                     <div class="pricing-item">
                         <div class="pricing-content">
                             <h3 class="lesson-name">Aula Individual</h3>
                             <p class="price">35€</p>
-                            <p class="description">Atenção personalizada com professor especializado. Duração de 1 hora.</p>
+                            <p class="description">Atenção personalizada com professor especializado. Duração de 1 hora.
+                            </p>
                             <a href="#book-lesson" class="btn-small">Reservar</a>
                         </div>
                     </div>
-                    
+
                     <div class="pricing-item">
                         <div class="pricing-content">
                             <h3 class="lesson-name">Pacote de 4 Aulas</h3>
                             <p class="price">120€</p>
-                            <p class="description">Economize 20€ com este pacote mensal. Ideal para progresso contínuo.</p>
+                            <p class="description">Economize 20€ com este pacote mensal. Ideal para progresso contínuo.
+                            </p>
                             <a href="#book-lesson" class="btn-small">Reservar</a>
                         </div>
                     </div>
-                    
+
                     <div class="pricing-item">
                         <div class="pricing-content">
                             <h3 class="lesson-name">Aulas em Grupo</h3>
@@ -182,7 +182,7 @@
                             <a href="#book-lesson" class="btn-small">Reservar</a>
                         </div>
                     </div>
-                    
+
                     <div class="pricing-item">
                         <div class="pricing-content">
                             <h3 class="lesson-name">Aula Experimental</h3>
@@ -191,18 +191,20 @@
                             <a href="#book-lesson" class="btn-small">Reservar</a>
                         </div>
                     </div>
-                    
+
                     <div class="pricing-item full-width">
                         <div class="pricing-content">
                             <h3 class="lesson-name">Curso Intensivo</h3>
                             <p class="price">280€</p>
-                            <p class="description">Pacote com 10 aulas. Progresso acelerado com desconto especial. Ideal para preparação de eventos e apresentações.</p>
+                            <p class="description">Pacote com 10 aulas. Progresso acelerado com desconto especial. Ideal
+                                para preparação de eventos e apresentações.</p>
                             <a href="#book-lesson" class="btn-small">Reservar</a>
                         </div>
                     </div>
                 </div>
-                
-                <p class="pricing-note">* Os preços podem variar de acordo com o instrumento. Consulte disponibilidade.</p>
+
+                <p class="pricing-note">* Os preços podem variar de acordo com o instrumento. Consulte disponibilidade.
+                </p>
                 <div class="text-center">
                     <a href="#contact" class="btn">Solicitar Informações</a>
                 </div>
@@ -214,28 +216,10 @@
             <div class="section-title">
                 <h2>O que dizem os nossos clientes</h2>
             </div>
-            
+
             <div class="testimonial-slider">
                 <div class="testimonial">
-                    <p>"A JC Music tem a melhor selecção de guitarras da cidade. A equipa é incrivelmente conhecedora e ajudou-me a encontrar o instrumento perfeito para as minhas necessidades."</p>
-                     <div class="stars">★★★★★</div>
-                    <div class="testimonial-author">
-                        <p>- Miguel S., Guitarrista</p>
-                    </div>
-                </div>
-                
-                <div class="testimonial">
-                    <p>"Tenho tido aulas de piano através da JC Music durante o último ano e as minhas competências melhoraram tremendamente. Altamente recomendado!"</p>
-                    <div class="stars">★★★★★</div>
-                    <div class="testimonial-author">
-                        <p>- Sara L., Estudante de Piano</p>
-                    </div>
-                </div>
-                
-                <div class="testimonial">
-                    <p>"A gama de acessórios e equipamento na JC Music é impressionante. Encontro sempre o que preciso para a configuração do meu estúdio."</p>
-                    <div class="stars">★★★★★</div>
-                    
+
                     <div class="testimonial-author">
                         <p>- David R., Produtor Musical</p>
                     </div>
@@ -249,9 +233,10 @@
         <div class="footer-container">
             <div class="footer-column">
                 <h3>JC Music</h3>
-                <p>O seu balcão único para tudo o que é música. Instrumentos de qualidade, acessórios e aulas profissionais.</p>
+                <p>O seu balcão único para tudo o que é música. Instrumentos de qualidade, acessórios e aulas
+                    profissionais.</p>
             </div>
-            
+
             <div class="footer-column">
                 <h3>Links Úteis</h3>
                 <ul>
@@ -262,14 +247,14 @@
                     <li><a href="#about">Sobre nós</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-column">
                 <h3>Fale Connosco</h3>
                 <p>123 Music Street<br>Melody City, MC 12345</p>
                 <p>Phone: (555) 123-4567</p>
                 <p>Email: geral@jcmusic.com</p>
             </div>
-            
+
             <div class="footer-column">
                 <h3>Newsletter</h3>
                 <p>Subscreva a nossa newsletter para receber atualizações e ofertas especiais.</p>
@@ -285,7 +270,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="copyright">
             <p>&copy; 2025 JC Music. All Rights Reserved.</p>
         </div>
@@ -293,3 +278,19 @@
 
 </body>
 </html>
+<script>
+
+    // Function to load header
+    async function loadHeader() {
+        try {
+            const response = await fetch('elements/header/header.html');
+            const headerHTML = await response.text();
+            document.getElementById('header-placeholder').innerHTML = headerHTML;
+        } catch (error) {
+            console.error('Error loading header:', error);
+        }
+    }
+
+    // Load header when page loads
+    document.addEventListener('DOMContentLoaded', loadHeader);
+</script>

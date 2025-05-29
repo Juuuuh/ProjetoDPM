@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrumentos de Cordas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../../styles/subcategorias.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header-placeholder"></div>
+
+    <section class="header-section">
+        <div class="header-content">
+            <div class="header-title">
+                <h1>Instrumentos de Teclados</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="categories-container">
+            <div class="categories-grid">
+                <!-- Guitarras Dreadnought -->
+                <div class="category-item">
+                    <div class="category-image">
+                        <img src="/assets/images/instrumentos/subcategorias/cordas/dreadnought.png" alt="Guitarra Dreadnought">
+                    </div>
+                    <div class="category-name">Guitarras Dreadnought</div>
+                </div>
+
+                <!-- Guitarras Jumbo -->
+                <div class="category-item">
+                    <div class="category-image">
+                        <img src="/assets/images/instrumentos/subcategorias/cordas/eletrica.png" alt="Guitarra Jumbo">
+                    </div>
+                    <div class="category-name">Guitarras Elétricas</div>
+                </div>
+
+                <!-- Guitarras Folk -->
+                <div class="category-item">
+                    <div class="category-image">
+                        <img src="/assets/images/instrumentos/subcategorias/cordas/classicos.png" alt="Guitarra Folk">
+                    </div>
+                    <div class="category-name">Clássicos</div>
+                </div>
+
+                <!-- Guitarras Roundback -->
+                <div class="category-item">
+                    <div class="category-image">
+                        <img src="/assets/images/instrumentos/subcategorias/cordas/roundback.png" alt="Guitarra Roundback">
+                    </div>
+                    <div class="category-name">Guitarras Roundback</div>
+                </div>
+
+                <!-- Guitarras Western de 12 cordas -->
+                <div class="category-item">
+                    <div class="category-image">
+                        <img src="/assets/images/instrumentos/subcategorias/cordas/12cordas.png" alt="Guitarra 12 cordas">
+                    </div>
+                    <div class="category-name">Guitarras Western de 12 cordas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<script>
+    // Function to load header
+    async function loadHeader() {
+        try {
+            const response = await fetch('../../elements/header/header.html');
+            const headerHTML = await response.text();
+            document.getElementById('header-placeholder').innerHTML = headerHTML;
+        } catch (error) {
+            console.error('Error loading header:', error);
+        }
+    }
+
+    // Load header when page loads
+    document.addEventListener('DOMContentLoaded', loadHeader);
+</script>

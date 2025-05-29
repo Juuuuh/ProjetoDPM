@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarras Acústicas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../styles/instrumentos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="browse-section">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <h3><i class="fas fa-filter"></i> Filtro</h3>
+            
+            <!-- Brand Filter -->
+            <div class="filter-section">
+                <h4>Fabricante</h4>
+                <div class="search-box">
+                    <input type="text" placeholder="Procurar marcas">
+                    <i class="fas fa-search"></i>
+                </div>
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <input type="checkbox" id="fender">
+                        <label for="fender">Fender</label>
+                        <span class="filter-count">(30)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="harley">
+                        <label for="harley">Harley Benton</label>
+                        <span class="filter-count">(76)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="gibson">
+                        <label for="gibson">Gibson</label>
+                        <span class="filter-count">(51)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="yamaha">
+                        <label for="yamaha">Yamaha</label>
+                        <span class="filter-count">(43)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="takamine">
+                        <label for="takamine">Takamine</label>
+                        <span class="filter-count">(29)</span>
+                    </li>
+                </ul>
+                <div class="show-more">+ Mostrar Mais</div>
+            </div>
+
+            <!-- Price Range -->
+            <div class="filter-section">
+                <h4>Gama de preços</h4>
+                <div class="price-range">
+                    <input type="number" class="price-input" placeholder="0" min="0">
+                    <span>—</span>
+                    <input type="number" class="price-input" placeholder="343387" min="0">
+                    <span>€</span>
+                </div>
+            </div>
+
+            <!-- Availability -->
+            <div class="filter-section">
+                <h4>Disponibilidade</h4>
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <input type="checkbox" id="in-stock">
+                        <label for="in-stock">Em stock</label>
+                        <span class="filter-count">(410)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Ratings -->
+            <div class="filter-section">
+                <h4>Classificações</h4>
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <input type="checkbox" id="5-star">
+                        <label for="5-star">
+                            <span class="stars">★★★★★</span>
+                        </label>
+                        <span class="filter-count">222</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="4-star">
+                        <label for="4-star">
+                            <span class="stars">★★★★☆</span>
+                        </label>
+                        <span class="filter-count">37</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="3-star">
+                        <label for="3-star">
+                            <span class="stars">★★★☆☆</span>
+                        </label>
+                        <span class="filter-count">3</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="2-star">
+                        <label for="2-star">
+                            <span class="stars">★★☆☆☆</span>
+                        </label>
+                        <span class="filter-count">1</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Special Selections -->
+            <div class="filter-section">
+                <h4>Selecionados para si</h4>
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <input type="checkbox" id="hot-deals">
+                        <label for="hot-deals">Hot Deals</label>
+                        <span class="filter-count">(4)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="new-products">
+                        <label for="new-products">Novos produtos e tendências</label>
+                        <span class="filter-count">(11)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="blow-outs">
+                        <label for="blow-outs">Blow-Outs</label>
+                        <span class="filter-count">(66)</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-header">
+                <div>
+                    <h1 class="content-title">Guitarras Dreadnought</h1>
+                    <span class="result-count">566</span>
+                </div>
+            </div>
+
+            <div class="content-controls">
+                <button class="filter-toggle" onclick="toggleSidebar()">
+                    <i class="fas fa-filter"></i> Filtro
+                </button>
+                <div class="sort-controls">
+                    <label for="sort">Popularidade</label>
+                    <select class="sort-select" id="sort">
+                        <option>Popularidade</option>
+                        <option>Preço: Baixo para Alto</option>
+                        <option>Preço: Alto para Baixo</option>
+                        <option>Mais Recente</option>
+                        <option>Melhor Avaliado</option>
+                    </select>
+                </div>
+                <div class="view-toggle">
+                    <button class="view-btn active"><i class="fas fa-th"></i></button>
+                    <button class="view-btn"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+
+            <!-- Instruments Grid -->
+            <div class="instruments-grid">
+                <!-- Guitar 1 -->
+                <div class="instrument-card">
+                    <div class="badge">OS MAIS VENDIDOS</div>
+                    <div class="instrument-image">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop" alt="Harley Benton D-120CE BK">
+                    </div>
+                    <div class="instrument-info">
+                        <div class="brand">Harley Benton</div>
+                        <h3 class="instrument-name">D-120CE BK</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-count">1727</span>
+                        </div>
+                        <ul class="specs-list">
+                            <li>Style: Dreadnought with cutaway</li>
+                            <li>Top: Spruce</li>
+                            <li>Body: Mahogany</li>
+                        </ul>
+                        <div class="stock-status">Em stock</div>
+                        <div class="price">€ 82</div>
+                        <div class="card-actions">
+                            <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guitar 2 -->
+                <div class="instrument-card">
+                    <div class="badge">OS MAIS VENDIDOS</div>
+                    <div class="instrument-image">
+                        <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=300&h=300&fit=crop" alt="Harley Benton D-120CE NT">
+                    </div>
+                    <div class="instrument-info">
+                        <div class="brand">Harley Benton</div>
+                        <h3 class="instrument-name">D-120CE NT</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-count">949</span>
+                        </div>
+                        <ul class="specs-list">
+                            <li>Type: Dreadnought with cutaway</li>
+                            <li>Top: Spruce</li>
+                            <li>Back and Sides: Mahogany</li>
+                        </ul>
+                        <div class="stock-status">Em stock</div>
+                        <div class="price">€ 82</div>
+                        <div class="card-actions">
+                            <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guitar 3 -->
+                <div class="instrument-card">
+                    <div class="instrument-image">
+                        <img src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?w=300&h=300&fit=crop" alt="Fender CD-140SCE All Mah">
+                    </div>
+                    <div class="instrument-info">
+                        <div class="brand">Fender</div>
+                        <h3 class="instrument-name">CD-140SCE All Mah</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-count">78</span>
+                        </div>
+                        <ul class="specs-list">
+                            <li>Build: Dreadnought with cutaway</li>
+                            <li>Top: Solid mahogany (Swietenia macrophylla- origin: India/Indonesia)</li>
+                            <li>Scalloped X-Bracing</li>
+                        </ul>
+                        <div class="stock-status">Em stock</div>
+                        <div class="price">€ 311</div>
+                        <div class="card-actions">
+                            <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guitar 4 -->
+                <div class="instrument-card">
+                    <div class="instrument-image">
+                        <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=300&h=300&fit=crop" alt="Gibson J-45 Standard VS">
+                    </div>
+                    <div class="instrument-info">
+                        <div class="brand">Gibson</div>
+                        <h3 class="instrument-name">J-45 Standard VS</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-count">24</span>
+                        </div>
+                        <ul class="specs-list">
+                            <li>Type: Round Shoulder</li>
+                            <li>Solid spruce top</li>
+                            <li>Mahogany body</li>
+                        </ul>
+                        <div class="stock-status">Em stock</div>
+                        <div class="price">€ 2.499</div>
+                        <div class="card-actions">
+                            <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guitar 5 -->
+                <div class="instrument-card">
+                    <div class="instrument-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=300&fit=crop" alt="Yamaha FG830">
+                    </div>
+                    <div class="instrument-info">
+                        <div class="brand">Yamaha</div>
+                        <h3 class="instrument-name">FG830</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-count">156</span>
+                        </div>
+                        <ul class="specs-list">
+                            <li>Type: Dreadnought</li>
+                            <li>Top: Solid Sitka Spruce</li>
+                            <li>Back and Sides: Rosewood</li>
+                        </ul>
+                        <div class="stock-status">Em stock</div>
+                        <div class="price">€ 189</div>
+                        <div class="card-actions">
+                            <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guitar 6 -->
+                <div class="instrument-card">
+                    <div class="instrument-image">
+                        <img src="https://images.unsplash.com/photo-1583971825809-2554bcd8e9b9?w=300&h=300&fit=crop" alt="Takamine GD20-NS">
+                    </div>
+                    <div class="instrument-info">
+                        <div class="brand">Takamine</div>
+                        <h3 class="instrument-name">GD20-NS</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-count">89</span>
+                        </div>
+                        <ul class="specs-list">
+                            <li>Type: Dreadnought</li>
+                            <li>Top: Spruce</li>
+                            <li>Back and Sides: Mahogany</li>
+                        </ul>
+                        <div class="stock-status">Em stock</div>
+                        <div class="price">€ 155</div>
+                        <div class="card-actions">
+                            <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+
+        // Add interactivity to filter checkboxes
+        document.querySelectorAll('.filter-item input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                // Here you would typically filter the products
+                console.log('Filter changed:', this.id, this.checked);
+            });
+        });
+
+        // Add interactivity to sort dropdown
+        document.getElementById('sort').addEventListener('change', function() {
+            console.log('Sort changed:', this.value);
+        });
+
+        // Add interactivity to view toggle buttons
+        document.querySelectorAll('.view-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Add to cart functionality
+        document.querySelectorAll('.cart-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const card = this.closest('.instrument-card');
+                const name = card.querySelector('.instrument-name').textContent;
+                alert(`${name} adicionado ao carrinho!`);
+            });
+        });
+
+        // Wishlist functionality
+        document.querySelectorAll('.action-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (this.querySelector('.fa-heart')) {
+                    this.style.color = this.style.color === 'red' ? '#666' : 'red';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
