@@ -297,6 +297,19 @@
 </body>
 </html>
 <script>
+    // Function to initialize the mobile menu toggle
+    function initializeMenuToggle() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+            });
+        } else {
+            console.warn('Menu toggle or nav links not found.');
+        }
+    }
 
     // Function to load header
     async function loadHeader() {
@@ -304,6 +317,9 @@
             const response = await fetch('elements/header/header.html');
             const headerHTML = await response.text();
             document.getElementById('header-placeholder').innerHTML = headerHTML;
+
+            // After header is loaded, initialize event listeners
+            initializeMenuToggle();
         } catch (error) {
             console.error('Error loading header:', error);
         }
