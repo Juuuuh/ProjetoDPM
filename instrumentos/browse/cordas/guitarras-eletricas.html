@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarras Elétricas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="/styles/browse-instrumentos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <div class="browse-section">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <h3><i class="fas fa-filter"></i> Filtro</h3>
+            
+            <!-- Brand Filter -->
+            <div class="filter-section">
+                <h4>Fabricante</h4>
+                <div class="search-box">
+                    <input type="text" placeholder="Procurar marcas">
+                    <i class="fas fa-search"></i>
+                </div>
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <input type="checkbox" id="fender">
+                        <label for="fender">Fender</label>
+                        <span class="filter-count">(89)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="gibson">
+                        <label for="gibson">Gibson</label>
+                        <span class="filter-count">(67)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="harley">
+                        <label for="harley">Harley Benton</label>
+                        <span class="filter-count">(124)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="epiphone">
+                        <label for="epiphone">Epiphone</label>
+                        <span class="filter-count">(58)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="ibanez">
+                        <label for="ibanez">Ibanez</label>
+                        <span class="filter-count">(72)</span>
+                    </li>
+                </ul>
+                <div class="show-more">+ Mostrar Mais</div>
+            </div>
+
+            <!-- Pickup Configuration -->
+            <div class="filter-section">
+                <h4>Configuração de Pickups</h4>
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <input type="checkbox" id="sss">
+                        <label for="sss">SSS (3 Single-Coil)</label>
+                        <span class="filter-count">(145)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="hsh">
+                        <label for="hsh">HSH (Humbucker-Single-Humbucker)</label>
+                        <span class="filter-count">(89)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="hh">
+                        <label for="hh">HH (2 Humbuckers)</label>
+                        <span class="filter-count">(167)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="p90">
+                        <label for="p90">P90</label>
+                        <span class="filter-count">(34)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Availability -->
+            <div class="filter-section">
+                <h4>Disponibilidade</h4>
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <input type="checkbox" id="in-stock">
+                        <label for="in-stock">Em stock</label>
+                        <span class="filter-count">(789)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Ratings -->
+            <div class="filter-section">
+                <h4>Classificações</h4>
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <input type="checkbox" id="5-star">
+                        <label for="5-star">
+                            <span class="stars">★★★★★</span>
+                        </label>
+                        <span class="filter-count">356</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="4-star">
+                        <label for="4-star">
+                            <span class="stars">★★★★☆</span>
+                        </label>
+                        <span class="filter-count">198</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="3-star">
+                        <label for="3-star">
+                            <span class="stars">★★★☆☆</span>
+                        </label>
+                        <span class="filter-count">45</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="2-star">
+                        <label for="2-star">
+                            <span class="stars">★★☆☆☆</span>
+                        </label>
+                        <span class="filter-count">12</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Special Selections -->
+            <div class="filter-section">
+                <h4>Selecionados para si</h4>
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <input type="checkbox" id="hot-deals">
+                        <label for="hot-deals">Hot Deals</label>
+                        <span class="filter-count">(15)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="new-products">
+                        <label for="new-products">Novos produtos e tendências</label>
+                        <span class="filter-count">(28)</span>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="blow-outs">
+                        <label for="blow-outs">Blow-Outs</label>
+                        <span class="filter-count">(43)</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-header">
+                <div>
+                    <h1 class="content-title">Guitarras Elétricas</h1>
+                    <span class="result-count">824</span>
+                </div>
+            </div>
+
+            <div class="content-controls">
+                <button class="filter-toggle" onclick="toggleSidebar()"> 
+                    <i class="fas fa-filter"></i> Filtros
+                </button>
+                <div class="sort-controls">
+                    <label for="sort">Popularidade</label>
+                    <select class="sort-select" id="sort">
+                        <option>Popularidade</option>
+                        <option>Preço: Baixo para Alto</option>
+                        <option>Preço: Alto para Baixo</option>
+                        <option>Mais Recente</option>
+                        <option>Melhor Avaliado</option>
+                    </select>
+                </div>
+                <div class="view-toggle">
+                    <button class="view-btn active"><i class="fas fa-th"></i></button>
+                    <button class="view-btn"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+
+            <!-- Instruments Grid -->
+            <div class="instruments-grid">
+                <!-- Guitar 1 -->
+                <div class="instrument-card">
+                    <div class="badge">OS MAIS VENDIDOS</div>
+                    <div class="instrument-image">
+                        <img src="/assets/images/instrumentos/browse/GuitarrasEletricas/ST-20HSS SB.jpg" alt="Harley Benton ST-20HSS SB">
+                    </div>
+                    <div class="instrument-info">
+                        <div class="brand">Harley Benton</div>
+                        <h3 class="instrument-name">ST-20HSS SB</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-count">2156</span>
+                        </div>
+                        <ul class="specs-list">
+                            <li>Body: Poplar</li>
+                            <li>Neck: Maple</li>
+                            <li>Pickups: HSS configuration</li>
+                        </ul>
+                        <div class="stock-status">Em stock</div>
+                        <div class="price">€ 95</div>
+                        <div class="card-actions">
+                            <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guitar 2 -->
+                <div class="instrument-card">
+                    <div class="badge">OS MAIS VENDIDOS</div>
+                    <div class="instrument-image">
+                        <img src="/assets/images/instrumentos/browse/GuitarrasEletricas/Player Stratocaster HSS.webp" alt="Fender Player Stratocaster HSS">
+                    </div>
+                    <div class="instrument-info">
+                        <div class="brand">Fender</div>
+                        <h3 class="instrument-name">Player Stratocaster HSS</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-count">423</span>
+                        </div>
+                        <ul class="specs-list">
+                            <li>Body: Alder</li>
+                            <li>Neck: Maple with modern "C" shape</li>
+                            <li>Pickups: Player Series Alnico 5 Strat singles, Player Series humbucker</li>
+                        </ul>
+                        <div class="stock-status">Em stock</div>
+                        <div class="price">€ 699</div>
+                        <div class="card-actions">
+                            <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guitar 3 -->
+                <div class="instrument-card">
+                    <div class="instrument-image">
+                        <img src="/assets/images/instrumentos/browse/GuitarrasEletricas/Les Paul Studio EB.jpg" alt="Gibson Les Paul Studio EB">
+                    </div>
+                    <div class="instrument-info">
+                        <div class="brand">Gibson</div>
+                        <h3 class="instrument-name">Les Paul Studio EB</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-count">187</span>
+                        </div>
+                        <ul class="specs-list">
+                            <li>Body: Mahogany with maple cap</li>
+                            <li>Neck: Mahogany with rosewood fingerboard</li>
+                            <li>Pickups: 490R and 498T humbuckers</li>
+                        </ul>
+                        <div class="stock-status">Em stock</div>
+                        <div class="price">€ 1.299</div>
+                        <div class="card-actions">
+                            <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Function to initialize the mobile menu toggle
+        function initializeMenuToggle() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('show');
+                });
+            } else {
+                console.warn('Menu toggle or nav links not found.');
+            }
+        }
+
+        // Function to toggle sidebar visibility
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('show');
+        }
+
+        // Function to load header
+        async function loadHeader() {
+            try {
+                const response = await fetch('/elements/header/header.html');
+                const headerHTML = await response.text();
+                document.getElementById('header-placeholder').innerHTML = headerHTML;
+
+                // After header is loaded, initialize event listeners
+                initializeMenuToggle();
+            } catch (error) {
+                console.error('Error loading header:', error);
+            }
+        }
+
+        // Load header when page loads
+        document.addEventListener('DOMContentLoaded', loadHeader);
+    </script>
+</body>
+</html>

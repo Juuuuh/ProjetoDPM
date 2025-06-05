@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixos Elétricos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="/styles/browse-instrumentos.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="browse-section">
+        <aside class="sidebar" id="sidebar">
+            <h3><i class="fas fa-filter"></i> Filtro</h3>
+            
+            <!-- Fabricante -->
+            <div class="filter-section">
+                <h4>Fabricante</h4>
+                <div class="search-box">
+                    <input type="text" placeholder="Procurar marcas">
+                    <i class="fas fa-search"></i>
+                </div>
+                <ul class="filter-list">
+                    <li><input type="checkbox" id="fender"><label for="fender">Fender</label><span class="filter-count">(27)</span></li>
+                    <li><input type="checkbox" id="squier"><label for="squier">Squier</label><span class="filter-count">(34)</span></li>
+                    <li><input type="checkbox" id="ibanez"><label for="ibanez">Ibanez</label><span class="filter-count">(58)</span></li>
+                    <li><input type="checkbox" id="yamaha"><label for="yamaha">Yamaha</label><span class="filter-count">(41)</span></li>
+                    <li><input type="checkbox" id="musicman"><label for="musicman">Music Man</label><span class="filter-count">(19)</span></li>
+                </ul>
+                <div class="show-more">+ Mostrar Mais</div>
+            </div>
+
+            <!-- Disponibilidade -->
+            <div class="filter-section">
+                <h4>Disponibilidade</h4>
+                <ul class="filter-list">
+                    <li><input type="checkbox" id="in-stock"><label for="in-stock">Em stock</label><span class="filter-count">(124)</span></li>
+                </ul>
+            </div>
+
+            <!-- Classificações -->
+            <div class="filter-section">
+                <h4>Classificações</h4>
+                <ul class="filter-list">
+                    <li><input type="checkbox" id="5-star"><label for="5-star"><span class="stars">★★★★★</span></label><span class="filter-count">89</span></li>
+                    <li><input type="checkbox" id="4-star"><label for="4-star"><span class="stars">★★★★☆</span></label><span class="filter-count">21</span></li>
+                    <li><input type="checkbox" id="3-star"><label for="3-star"><span class="stars">★★★☆☆</span></label><span class="filter-count">6</span></li>
+                </ul>
+            </div>
+
+            <!-- Selecções -->
+            <div class="filter-section">
+                <h4>Selecionados para si</h4>
+                <ul class="filter-list">
+                    <li><input type="checkbox" id="hot-deals"><label for="hot-deals">Hot Deals</label><span class="filter-count">(5)</span></li>
+                    <li><input type="checkbox" id="new-products"><label for="new-products">Novidades</label><span class="filter-count">(12)</span></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <div class="content-header">
+                <div>
+                    <h1 class="content-title">Baixos Elétricos</h1>
+                    <span class="result-count">129</span>
+                </div>
+            </div>
+
+            <div class="content-controls">
+                <button class="filter-toggle" onclick="toggleSidebar()"><i class="fas fa-filter"></i> Filtros</button>
+                <div class="sort-controls">
+                    <label for="sort">Ordenar por</label>
+                    <select class="sort-select" id="sort">
+                        <option>Popularidade</option>
+                        <option>Preço: Baixo para Alto</option>
+                        <option>Preço: Alto para Baixo</option>
+                        <option>Mais Recente</option>
+                        <option>Melhor Avaliado</option>
+                    </select>
+                </div>
+                <div class="view-toggle">
+                    <button class="view-btn active"><i class="fas fa-th"></i></button>
+                    <button class="view-btn"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+
+            <!-- Grelha de instrumentos -->
+            <div class="instruments-grid">
+
+                <!-- Baixo 1 -->
+                <div class="instrument-card">
+                    <div class="badge">MAIS POPULAR</div>
+                    <div class="instrument-image">
+                        <img src="/assets/images/instrumentos/browse/Baixos/Player Jazz Bass.webp" alt="Fender Player Jazz Bass">
+                    </div>
+                    <div class="instrument-info">
+                        <div class="brand">Fender</div>
+                        <h3 class="instrument-name">Player Jazz Bass</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-count">384</span>
+                        </div>
+                        <ul class="specs-list">
+                            <li>Pickups: 2x Single Coil Jazz</li>
+                            <li>Corpo: Alder</li>
+                            <li>Escala: 34" (Long Scale)</li>
+                        </ul>
+                        <div class="stock-status">Em stock</div>
+                        <div class="price">€ 799</div>
+                        <div class="card-actions">
+                            <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Baixo 2 -->
+                <div class="instrument-card">
+                    <div class="instrument-image">
+                        <img src="/assets/images/instrumentos/browse/Baixos/TRBX304.jpg" alt="Yamaha TRBX304">
+                    </div>
+                    <div class="instrument-info">
+                        <div class="brand">Yamaha</div>
+                        <h3 class="instrument-name">TRBX304</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-count">223</span>
+                        </div>
+                        <ul class="specs-list">
+                            <li>Pickups: 2x Humbucker</li>
+                            <li>EQ Ativo 5 posições</li>
+                            <li>Corpo: Mahogany</li>
+                        </ul>
+                        <div class="stock-status">Em stock</div>
+                        <div class="price">€ 349</div>
+                        <div class="card-actions">
+                            <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Baixo 3 -->
+                <div class="instrument-card">
+                    <div class="instrument-image">
+                        <img src="/assets/images/instrumentos/browse/Baixos/StingRay Ray4.webp" alt="Sterling by Music Man StingRay Ray4">
+                    </div>
+                    <div class="instrument-info">
+                        <div class="brand">Music Man</div>
+                        <h3 class="instrument-name">StingRay Ray4</h3>
+                        <div class="rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-count">167</span>
+                        </div>
+                        <ul class="specs-list">
+                            <li>Pickup: 1x Humbucker (Bridge)</li>
+                            <li>EQ ativo de 2 bandas</li>
+                            <li>Corpo: Basswood</li>
+                        </ul>
+                        <div class="stock-status">Em stock</div>
+                        <div class="price">€ 298</div>
+                        <div class="card-actions">
+                            <button class="action-btn"><i class="fas fa-balance-scale"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+        async function loadHeader() {
+            try {
+                const response = await fetch('/elements/header/header.html');
+                const headerHTML = await response.text();
+                document.getElementById('header-placeholder').innerHTML = headerHTML;
+                initializeMenuToggle();
+            } catch (error) {
+                console.error('Erro ao carregar o cabeçalho:', error);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', loadHeader);
+    </script>
+</body>
+</html>

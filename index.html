@@ -119,13 +119,13 @@
                 <div class="category-card">
                     <img src="assets/images/instrumentos/subcategorias/sopros/cat-inst-sopro.png" alt="Teclados">
                     <h3>Instrumentos de Sopros</h3>
-                    <a href="instrumentos/subcategorias/sub-sopros.html" class="btn-small">Ver</a>
+                    <a href="#" class="btn-small">Ver</a>
                 </div>
 
                 <div class="category-card">
                     <img src="assets/images/instrumentos/subcategorias/teclas/cat-teclado.png" alt="Instrumentos de sopro">
                     <h3>Instrumentos de teclas</h3>
-                    <a href="instrumentos/subcategorias/sub-teclados.html" class="btn-small">Ver</a>
+                    <a href="#" class="btn-small">Ver</a>
                 </div>
             </div>
         </section>
@@ -335,53 +335,8 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>JC Music</h3>
-                <p>O seu balcão único para tudo o que é música. Instrumentos de qualidade, acessórios e aulas
-                    profissionais.</p>
-            </div>
-
-            <div class="footer-column">
-                <h3>Links Úteis</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#instruments">Categorias</a></li>
-                    <li><a href="#accessories">Destaques</a></li>
-                    <li><a href="#lessons">Aulas</a></li>
-                    <li><a href="#about">Sobre nós</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Fale Connosco</h3>
-                <p>123 Music Street<br>Melody City, MC 12345</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Email: geral@jcmusic.com</p>
-            </div>
-
-            <div class="footer-column">
-                <h3>Newsletter</h3>
-                <p>Subscreva a nossa newsletter para receber atualizações e ofertas especiais.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="O seu email" required>
-                    <button type="submit" class="btn-small">Subscrever</button>
-                </form>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="copyright">
-            <p>&copy; 2025 JC Music. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
 
 </body>
 </html>
@@ -416,4 +371,35 @@
 
     // Load header when page loads
     document.addEventListener('DOMContentLoaded', loadHeader);
+
+    // Function to initialize the mobile menu toggle
+    function initializeMenuToggle() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+            });
+        } else {
+            console.warn('Menu toggle or nav links not found.');
+        }
+    }
+
+    // Function to load footer
+    async function loadFooter() {
+        try {
+            const response = await fetch('elements/footer/footer.html');
+            const footerHTML = await response.text();
+            document.getElementById('footer-placeholder').innerHTML = footerHTML;
+
+            // After footer is loaded, initialize event listeners
+            initializeMenuToggle();
+        } catch (error) {
+            console.error('Error loading footer:', error);
+        }
+    }
+
+    // Load footer when page loads
+    document.addEventListener('DOMContentLoaded', loadFooter);
 </script>
