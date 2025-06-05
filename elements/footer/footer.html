@@ -33,6 +33,14 @@
             padding-bottom: 10px;
         }
 
+        .footer-column h3::after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+        }
+
         .footer-column p {
             margin-bottom: 1rem;
             color: #bdc3c7;
@@ -54,8 +62,9 @@
         }
 
         .newsletter-form {
-        flex-direction: column;
-        gap: 0.5rem;
+            display: block;
+            margin-bottom: 1.5rem;
+            gap: 0;
         }
 
         .newsletter-form input {
@@ -103,7 +112,6 @@
             color: #bdc3c7;
             font-weight: 400;
         }
-        
     </style>
 </head>
 
